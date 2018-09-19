@@ -35,7 +35,7 @@
 
 function Login(){
     var request = new XMLHttpRequest();
-    request.open('POST', 'http://192.168.0.15:4000/api/users/add', true);
+    request.open('POST', '/api/users/add', true);
     request.setRequestHeader("Content-type", "application/json");
     request.send(JSON.stringify({username:document.getElementById('m_login_email').value,
         password:document.getElementById('m_login_password').value}));
